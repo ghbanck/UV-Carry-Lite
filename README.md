@@ -1,3 +1,5 @@
+![UV Carry: move a UV island and its texture follows it](assets/hero/uv-carry-hero.png)
+
 # UV Carry Lite
 
 **Move UVs. Carry Textures.**
