@@ -7,7 +7,7 @@ A free Blender 5.1 add-on: move, rotate or scale complete UV islands with Blende
 <p align="center">
   <img src="assets/demo/uv-carry-demo.png" alt="UV Carry tool mode in Blender 5.1: the UV island of Suzanne's eye is moved with G, Ctrl+Enter carries its texels, and the eye on the model looks as it did before" width="100%">
   <br>
-  <a href="https://github.com/user-attachments/assets/38f2975d-ccb9-41f7-8067-25b8c14d95c2"><b>▶ Watch the demo</b></a> (12 seconds, full resolution)
+  <a href="https://github.com/user-attachments/assets/ccae296d-47ee-481e-8287-83b9d082a059"><b>▶ Watch the demo</b></a> (12 seconds, full resolution, with sound)
 </p>
 
 <sub>The author's screen recording in Blender 5.1.1: G moves the island of Suzanne's eye, Ctrl+Enter carries its texels, and Object Mode shows the eye as it was.</sub>
