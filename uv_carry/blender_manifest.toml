@@ -1,0 +1,21 @@
+schema_version = "1.0.0"
+
+id = "uv_carry"
+version = "0.4.0"
+name = "UV Carry Lite"
+tagline = "Move, rotate or scale UV islands and their texture follows"
+maintainer = "Gustavo Banck"
+type = "add-on"
+website = "https://github.com/ghbanck/UV-Carry-Lite"
+tags = ["UV", "Paint"]
+
+blender_version_min = "5.1.0"
+
+license = ["SPDX:GPL-3.0-or-later"]
+copyright = ["2026 Gustavo Banck"]
+
+[permissions]
+files = "Save carried images with backups, and write session traces"
+
+[build]
+paths_exclude_pattern = ["__pycache__/", "/.git/", "/*.zip"]
