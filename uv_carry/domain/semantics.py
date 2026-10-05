@@ -22,7 +22,7 @@ from dataclasses import dataclass, field
 COLOR, DATA, PACKED, HEIGHT = "color", "data", "packed", "height"
 NORMAL_TANGENT, NORMAL_OBJECT, UNKNOWN = "normal_tangent", "normal_object", "unknown"
 NORMALS = frozenset({NORMAL_TANGENT, NORMAL_OBJECT})
-PRO_EDITION = "carried by UV Carry Pro"
+NO_NORMALS = "UV Carry Lite does not carry normal maps"
 
 COLOR_INPUTS = frozenset({"Base Color", "Specular Tint", "Coat Tint", "Sheen Tint", "Emission Color"})
 NORMAL_INPUTS = frozenset({"Normal", "Coat Normal"})
@@ -156,7 +156,7 @@ def classify(facts):
         return Entry(facts.key, UNKNOWN, "blocked", f"used with incompatible meanings ({uses})", **common)
     if semantic in NORMALS:
         space = "tangent-space" if semantic == NORMAL_TANGENT else "object-space"
-        return Entry(facts.key, semantic, "blocked", f"a {space} normal map: normal maps are {PRO_EDITION}",
+        return Entry(facts.key, semantic, "blocked", f"a {space} normal map: {NO_NORMALS}",
                      **common)
 
     notes = list(diagnostics(facts, semantic))
