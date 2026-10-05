@@ -161,7 +161,7 @@
 <circle cx="124.0" cy="242.0" r="4.0" fill="#38d0ff" fill-opacity="0.9"/>
 <line x1="124.0" y1="242.0" x2="106.4" y2="251.5" stroke="#38d0ff" stroke-width="1.5" stroke-opacity="0.8"/>
 <circle cx="106.4" cy="251.5" r="5" fill="#ffb547" stroke="#0d1016" stroke-width="2"/>
-<text x="860.0" y="96.0" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" font-size="15" fill="#eef1f5" text-anchor="start" font-weight="600" >3  Normal maps, in the full edition</text>
+<text x="860.0" y="96.0" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" font-size="15" fill="#eef1f5" text-anchor="start" font-weight="600" >3  Normal maps, in UV Carry Pro</text>
 <rect x="860" y="110" width="288" height="288" fill="#0d1016" stroke="#2a313d" stroke-width="1"/>
 <polygon points="900.0,332.0 1112.0,358.0 1028.0,180.0" fill="#1f2a3a" stroke="#9aa5b4" stroke-width="1.5" stroke-linejoin="round"/>
 <circle cx="900.0" cy="332.0" r="4" fill="#0d1016" stroke="#eef1f5" stroke-width="2"/>
