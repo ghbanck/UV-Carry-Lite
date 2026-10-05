@@ -1,0 +1,187 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" width="1200" height="520">
+<defs>
+<marker id="tip-ffb547" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#ffb547"/></marker>
+<marker id="tip-38d0ff" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#38d0ff"/></marker>
+<marker id="tip-3ddc97" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#3ddc97"/></marker>
+<marker id="tip-ff6b6b" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#ff6b6b"/></marker>
+<marker id="tip-5b8cff" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#5b8cff"/></marker>
+<marker id="tip-eef1f5" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#eef1f5"/></marker>
+</defs>
+<rect x="0" y="0" width="1200" height="520" rx="18" fill="#151a22"/>
+<text x="40.0" y="52.0" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" font-size="26" fill="#eef1f5" text-anchor="start" font-weight="600" >How a carry works</text>
+<text x="1160.0" y="52.0" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" font-size="15" fill="#9aa5b4" text-anchor="end" font-weight="400" >one island, one image of 12 x 12 texels</text>
+<rect x="40" y="110" width="288" height="288" fill="#0d1016" stroke="#2a313d" stroke-width="1"/>
+<rect x="65" y="327" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="89" y="327" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="113" y="327" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="137" y="327" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="161" y="327" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="185" y="327" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="65" y="303" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="89" y="303" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="113" y="303" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="137" y="303" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="161" y="303" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="185" y="303" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="65" y="279" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="89" y="279" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="113" y="279" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="137" y="279" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="161" y="279" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="185" y="279" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="65" y="255" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="89" y="255" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="113" y="255" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="137" y="255" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="161" y="255" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="185" y="255" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="65" y="231" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="89" y="231" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="113" y="231" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="137" y="231" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="161" y="231" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="185" y="231" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="89" y="207" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="113" y="207" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="137" y="207" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="161" y="207" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<rect x="137" y="183" width="22" height="22" rx="3" fill="#38d0ff" fill-opacity="0.32"/>
+<line x1="64" y1="110" x2="64" y2="398" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="40" y1="134" x2="328" y2="134" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="88" y1="110" x2="88" y2="398" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="40" y1="158" x2="328" y2="158" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="112" y1="110" x2="112" y2="398" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="40" y1="182" x2="328" y2="182" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="136" y1="110" x2="136" y2="398" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="40" y1="206" x2="328" y2="206" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="160" y1="110" x2="160" y2="398" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="40" y1="230" x2="328" y2="230" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="184" y1="110" x2="184" y2="398" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="40" y1="254" x2="328" y2="254" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="208" y1="110" x2="208" y2="398" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="40" y1="278" x2="328" y2="278" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="232" y1="110" x2="232" y2="398" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="40" y1="302" x2="328" y2="302" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="256" y1="110" x2="256" y2="398" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="40" y1="326" x2="328" y2="326" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="280" y1="110" x2="280" y2="398" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="40" y1="350" x2="328" y2="350" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="304" y1="110" x2="304" y2="398" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="40" y1="374" x2="328" y2="374" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="74.6" y1="340.4" x2="155.2" y2="173.4" stroke="#eef1f5" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="74.6" y1="340.4" x2="68.8" y2="231.0" stroke="#eef1f5" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="3 3"/>
+<polygon points="74.6,340.4 189.8,363.4 218.6,254.0 155.2,173.4 68.8,231.0" fill="none" stroke="#eef1f5" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="74.6" cy="340.4" r="4" fill="#0d1016" stroke="#eef1f5" stroke-width="2"/>
+<circle cx="189.8" cy="363.4" r="4" fill="#0d1016" stroke="#eef1f5" stroke-width="2"/>
+<circle cx="218.6" cy="254.0" r="4" fill="#0d1016" stroke="#eef1f5" stroke-width="2"/>
+<circle cx="155.2" cy="173.4" r="4" fill="#0d1016" stroke="#eef1f5" stroke-width="2"/>
+<circle cx="68.8" cy="231.0" r="4" fill="#0d1016" stroke="#eef1f5" stroke-width="2"/>
+<text x="40.0" y="96.0" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" font-size="15" fill="#eef1f5" text-anchor="start" font-weight="600" >1  Origin: the texels under the island are frozen</text>
+<rect x="450" y="110" width="288" height="288" fill="#0d1016" stroke="#2a313d" stroke-width="1"/>
+<rect x="595" y="279" width="22" height="22" rx="3" fill="#ffb547" fill-opacity="0.32"/>
+<circle cx="606.0" cy="290.0" r="2.2" fill="#ffb547"/>
+<rect x="619" y="279" width="22" height="22" rx="3" fill="#ffb547" fill-opacity="0.32"/>
+<circle cx="630.0" cy="290.0" r="2.2" fill="#ffb547"/>
+<rect x="643" y="279" width="22" height="22" rx="3" fill="#ffb547" fill-opacity="0.32"/>
+<circle cx="654.0" cy="290.0" r="2.2" fill="#ffb547"/>
+<rect x="667" y="279" width="22" height="22" rx="3" fill="#ffb547" fill-opacity="0.32"/>
+<circle cx="678.0" cy="290.0" r="2.2" fill="#ffb547"/>
+<rect x="595" y="255" width="22" height="22" rx="3" fill="#ffb547" fill-opacity="0.32"/>
+<circle cx="606.0" cy="266.0" r="2.2" fill="#ffb547"/>
+<rect x="619" y="255" width="22" height="22" rx="3" fill="#ffb547" fill-opacity="0.32"/>
+<circle cx="630.0" cy="266.0" r="2.2" fill="#ffb547"/>
+<rect x="643" y="255" width="22" height="22" rx="3" fill="#ffb547" fill-opacity="0.32"/>
+<circle cx="654.0" cy="266.0" r="2.2" fill="#ffb547"/>
+<rect x="667" y="255" width="22" height="22" rx="3" fill="#ffb547" fill-opacity="0.32"/>
+<circle cx="678.0" cy="266.0" r="2.2" fill="#ffb547"/>
+<rect x="571" y="231" width="22" height="22" rx="3" fill="#ffb547" fill-opacity="0.32"/>
+<circle cx="582.0" cy="242.0" r="2.2" fill="#ffb547"/>
+<rect x="595" y="231" width="22" height="22" rx="3" fill="#ffb547" fill-opacity="0.32"/>
+<circle cx="606.0" cy="242.0" r="2.2" fill="#ffb547"/>
+<rect x="619" y="231" width="22" height="22" rx="3" fill="#ffb547" fill-opacity="0.32"/>
+<circle cx="630.0" cy="242.0" r="2.2" fill="#ffb547"/>
+<rect x="643" y="231" width="22" height="22" rx="3" fill="#ffb547" fill-opacity="0.32"/>
+<circle cx="654.0" cy="242.0" r="2.2" fill="#ffb547"/>
+<rect x="667" y="231" width="22" height="22" rx="3" fill="#ffb547" fill-opacity="0.32"/>
+<circle cx="678.0" cy="242.0" r="2.2" fill="#ffb547"/>
+<rect x="595" y="207" width="22" height="22" rx="3" fill="#ffb547" fill-opacity="0.32"/>
+<circle cx="606.0" cy="218.0" r="2.2" fill="#ffb547"/>
+<rect x="619" y="207" width="22" height="22" rx="3" fill="#ffb547" fill-opacity="0.32"/>
+<circle cx="630.0" cy="218.0" r="2.2" fill="#ffb547"/>
+<rect x="643" y="207" width="22" height="22" rx="3" fill="#ffb547" fill-opacity="0.32"/>
+<circle cx="654.0" cy="218.0" r="2.2" fill="#ffb547"/>
+<rect x="667" y="207" width="22" height="22" rx="3" fill="#ffb547" fill-opacity="0.32"/>
+<circle cx="678.0" cy="218.0" r="2.2" fill="#ffb547"/>
+<rect x="595" y="183" width="22" height="22" rx="3" fill="#ffb547" fill-opacity="0.32"/>
+<circle cx="606.0" cy="194.0" r="2.2" fill="#ffb547"/>
+<rect x="619" y="183" width="22" height="22" rx="3" fill="#ffb547" fill-opacity="0.32"/>
+<circle cx="630.0" cy="194.0" r="2.2" fill="#ffb547"/>
+<rect x="643" y="183" width="22" height="22" rx="3" fill="#ffb547" fill-opacity="0.32"/>
+<circle cx="654.0" cy="194.0" r="2.2" fill="#ffb547"/>
+<line x1="474" y1="110" x2="474" y2="398" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="450" y1="134" x2="738" y2="134" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="498" y1="110" x2="498" y2="398" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="450" y1="158" x2="738" y2="158" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="522" y1="110" x2="522" y2="398" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="450" y1="182" x2="738" y2="182" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="546" y1="110" x2="546" y2="398" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="450" y1="206" x2="738" y2="206" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="570" y1="110" x2="570" y2="398" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="450" y1="230" x2="738" y2="230" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="594" y1="110" x2="594" y2="398" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="450" y1="254" x2="738" y2="254" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="618" y1="110" x2="618" y2="398" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="450" y1="278" x2="738" y2="278" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="642" y1="110" x2="642" y2="398" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="450" y1="302" x2="738" y2="302" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="666" y1="110" x2="666" y2="398" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="450" y1="326" x2="738" y2="326" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="690" y1="110" x2="690" y2="398" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="450" y1="350" x2="738" y2="350" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="714" y1="110" x2="714" y2="398" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="450" y1="374" x2="738" y2="374" stroke="#2a313d" stroke-width="0.8"/>
+<line x1="616.6" y1="314.9" x2="611.0" y2="170.3" stroke="#eef1f5" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="3 3"/>
+<line x1="616.6" y1="314.9" x2="572.6" y2="241.6" stroke="#eef1f5" stroke-opacity="0.35" stroke-width="1" stroke-dasharray="3 3"/>
+<polygon points="616.6,314.9 704.4,288.6 684.2,202.7 611.0,170.3 572.6,241.6" fill="none" stroke="#eef1f5" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="616.6" cy="314.9" r="4" fill="#0d1016" stroke="#eef1f5" stroke-width="2"/>
+<circle cx="704.4" cy="288.6" r="4" fill="#0d1016" stroke="#eef1f5" stroke-width="2"/>
+<circle cx="684.2" cy="202.7" r="4" fill="#0d1016" stroke="#eef1f5" stroke-width="2"/>
+<circle cx="611.0" cy="170.3" r="4" fill="#0d1016" stroke="#eef1f5" stroke-width="2"/>
+<circle cx="572.6" cy="241.6" r="4" fill="#0d1016" stroke="#eef1f5" stroke-width="2"/>
+<text x="450.0" y="96.0" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" font-size="15" fill="#eef1f5" text-anchor="start" font-weight="600" >2  Final place: every texel centre inside is written</text>
+<circle cx="606.0" cy="242.0" r="8" fill="none" stroke="#ffb547" stroke-width="3"/>
+<path d="M596.0,238.0 Q358.8,346.8 118.4,245.5" fill="none" stroke="#ffb547" stroke-width="3" stroke-linecap="round" marker-end="url(#tip-ffb547)"/>
+<text x="357.2" y="320.3" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" font-size="15" fill="#ffb547" text-anchor="middle" font-weight="600" >mapped back by the inverse map</text>
+<circle cx="100.0" cy="266.0" r="4.7" fill="#38d0ff" fill-opacity="0.9"/>
+<line x1="100.0" y1="266.0" x2="106.4" y2="251.5" stroke="#38d0ff" stroke-width="1.5" stroke-opacity="0.8"/>
+<circle cx="100.0" cy="242.0" r="5.7" fill="#38d0ff" fill-opacity="0.9"/>
+<line x1="100.0" y1="242.0" x2="106.4" y2="251.5" stroke="#38d0ff" stroke-width="1.5" stroke-opacity="0.8"/>
+<circle cx="124.0" cy="266.0" r="3.6" fill="#38d0ff" fill-opacity="0.9"/>
+<line x1="124.0" y1="266.0" x2="106.4" y2="251.5" stroke="#38d0ff" stroke-width="1.5" stroke-opacity="0.8"/>
+<circle cx="124.0" cy="242.0" r="4.0" fill="#38d0ff" fill-opacity="0.9"/>
+<line x1="124.0" y1="242.0" x2="106.4" y2="251.5" stroke="#38d0ff" stroke-width="1.5" stroke-opacity="0.8"/>
+<circle cx="106.4" cy="251.5" r="5" fill="#ffb547" stroke="#0d1016" stroke-width="2"/>
+<text x="860.0" y="96.0" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" font-size="15" fill="#eef1f5" text-anchor="start" font-weight="600" >3  Normal maps, in the full edition</text>
+<rect x="860" y="110" width="288" height="288" fill="#0d1016" stroke="#2a313d" stroke-width="1"/>
+<polygon points="900.0,332.0 1112.0,358.0 1028.0,180.0" fill="#1f2a3a" stroke="#9aa5b4" stroke-width="1.5" stroke-linejoin="round"/>
+<circle cx="900.0" cy="332.0" r="4" fill="#0d1016" stroke="#eef1f5" stroke-width="2"/>
+<circle cx="1112.0" cy="358.0" r="4" fill="#0d1016" stroke="#eef1f5" stroke-width="2"/>
+<circle cx="1028.0" cy="180.0" r="4" fill="#0d1016" stroke="#eef1f5" stroke-width="2"/>
+<path d="M1013.3,290.0 Q1050.1,294.5 1086.8,299.0" fill="none" stroke="#ff6b6b" stroke-width="3" stroke-linecap="round" marker-end="url(#tip-ff6b6b)"/>
+<text x="1100.7" y="305.7" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" font-size="17" fill="#ff6b6b" text-anchor="middle" font-weight="700" >T</text>
+<path d="M1013.3,290.0 Q1024.2,258.9 1035.1,227.7" fill="none" stroke="#3ddc97" stroke-width="3" stroke-linecap="round" marker-end="url(#tip-3ddc97)"/>
+<text x="1039.8" y="219.5" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" font-size="17" fill="#3ddc97" text-anchor="middle" font-weight="700" >B</text>
+<path d="M1013.3,290.0 Q991.6,262.7 969.9,235.4" fill="none" stroke="#5b8cff" stroke-width="3" stroke-linecap="round" marker-end="url(#tip-5b8cff)"/>
+<text x="961.3" y="229.5" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" font-size="17" fill="#5b8cff" text-anchor="middle" font-weight="700" >N</text>
+<circle cx="1013.3" cy="290.0" r="4" fill="#eef1f5"/>
+<text x="870.0" y="384.0" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" font-size="13" fill="#9aa5b4" text-anchor="start" font-weight="400" >x, y, z of the corners and their u, v</text>
+<text x="40.0" y="428.0" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#9aa5b4" text-anchor="start" font-weight="400" >Corner u, v at the origin and now give</text>
+<text x="40.0" y="449.0" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#9aa5b4" text-anchor="start" font-weight="400" >each island one map:  [u', v'] = A [u, v] + t.</text>
+<text x="40.0" y="470.0" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#9aa5b4" text-anchor="start" font-weight="400" >Mirrors and collapsing maps are refused.</text>
+<text x="450.0" y="428.0" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#9aa5b4" text-anchor="start" font-weight="400" >Texel (i, j) has its centre at ((i + 0.5)/W, (j + 0.5)/H).</text>
+<text x="450.0" y="449.0" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#9aa5b4" text-anchor="start" font-weight="400" >Each one is mapped back and read from the four</text>
+<text x="450.0" y="470.0" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#9aa5b4" text-anchor="start" font-weight="400" >nearest frozen texels of the island only (bilinear).</text>
+<text x="860.0" y="428.0" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#9aa5b4" text-anchor="start" font-weight="400" >Blender's tangents come from how u, v stretch over</text>
+<text x="860.0" y="449.0" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#9aa5b4" text-anchor="start" font-weight="400" >the 3D triangle. A turned island's normals are</text>
+<text x="860.0" y="470.0" font-family="Segoe UI, Inter, Helvetica Neue, Arial, sans-serif" font-size="14" fill="#9aa5b4" text-anchor="start" font-weight="400" >decoded in the old frame and re-encoded in the new.</text>
+</svg>
