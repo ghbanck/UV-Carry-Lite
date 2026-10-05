@@ -1,7 +1,7 @@
 schema_version = "1.0.0"
 
 id = "uv_carry"
-version = "0.4.0"
+version = "0.4.1"
 name = "UV Carry Lite"
 tagline = "Move, rotate or scale UV islands and their texture follows"
 maintainer = "Gustavo Banck"

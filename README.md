@@ -37,9 +37,9 @@ The zip holds the add-on, a short README and the usage guide.
 
 ## What UV Carry Lite does not do
 
-- **Normal maps.** UV Carry Pro carries them. While a normal map is in the Images list of the UV Carry panel, UV Carry Lite refuses to carry; leave it out there to carry the other images, and the normal map stays as it was.
-- **Other materials' images.** Each island carries the images of its own materials. Carrying islands into another material's images, which merges several materials into one atlas, is UV Carry Pro's.
-- **Pack Islands.** UV Carry Pro carries the texture of islands packed with UV > Pack Islands.
+- **Normal maps.** UV Carry, the paid edition, carries them. While a normal map is in the Images list of the UV Carry panel, UV Carry Lite refuses to carry; leave it out there to carry the other images, and the normal map stays as it was.
+- **Other materials' images.** Each island carries the images of its own materials. Carrying islands into another material's images, which merges several materials into one atlas, is UV Carry's.
+- **Pack Islands.** UV Carry carries the texture of islands packed with UV > Pack Islands.
 - **UDIM tiles, mirrored islands and parts of islands** are refused.
 
 ## How it works
@@ -55,13 +55,13 @@ UV Carry writes no pixel while the islands move. It remembers where they started
 5. **Backwards, never forwards.** Every texel the island covers at its final place is mapped back by the inverse map into the frozen source and read bilinearly from the island's own texels only, so nothing bleeds in from a neighbouring island. Margin (px) rings are then grown around the written texels from their own edge values: no gap, no seam.
 6. **One transaction.** Every image's result is computed before the first write. Images are then written one by one, each checked again just before its write; a failure restores what was written and puts the islands back. `Ctrl+Z` restores the texels with the UVs.
 
-## UV Carry Pro
+## UV Carry
 
-UV Carry Pro adds normal maps, which keep their relief when an island turns; Carry Into, which carries islands into another material's images and merges the islands of several materials into one atlas; and Pack Islands, whose packed islands carry their texture. Installing it replaces UV Carry Lite.
+UV Carry, the paid edition, adds normal maps, which keep their relief when an island turns; Carry Into, which carries islands into another material's images and merges the islands of several materials into one atlas; and Pack Islands, whose packed islands carry their texture. Installing it replaces UV Carry Lite.
 
 ## State
 
-0.4.0 is a pre-release, run with Blender 5.1.1 on Windows 11. Other Blender versions and operating systems are not verified.
+0.4.1, run with Blender 5.1.1 on Windows 11. Other Blender versions and operating systems are not verified.
 
 ## License
 

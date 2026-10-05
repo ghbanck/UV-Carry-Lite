@@ -1,4 +1,4 @@
-# UV Carry Lite 0.4.0
+# UV Carry Lite 0.4.1
 
 UV Carry Lite is a Blender 5.1 add-on. Move, rotate or scale complete UV islands, press Ctrl+Enter, and the texture under them follows them, in every image of their materials.
 
@@ -37,11 +37,7 @@ Ctrl+Enter with complete islands selected and no move pads them instead: it fill
 - Each island carries the images of its own materials. UV Carry Lite does not carry a texture into another material's images, and does not combine materials.
 - Carried images change in memory, as texture painting changes them. Ctrl+Z undoes a carry; Save Carried Images keeps it on disk, after a backup of each file.
 - A carry over the Memory Budget in the preferences (4 GB by default) is refused before anything is written.
-- Normal maps are carried by UV Carry Pro. While a normal map is in the Images list (N > UV Carry), UV Carry Lite refuses to carry; leave it out there to carry the other images, and the normal map stays as it was.
-
-## UV Carry Pro
-
-UV Carry Pro adds normal maps, which keep their relief when an island turns; Carry Into, which carries islands into another material's images and merges the islands of several materials into one atlas; and Pack Islands, whose packed islands carry their texture. Installing it replaces UV Carry Lite.
+- UV Carry Lite does not carry normal maps. While a normal map is in the Images list (N > UV Carry), it refuses to carry; leave it out there to carry the other images, and the normal map stays as it was.
 
 ## Page
 

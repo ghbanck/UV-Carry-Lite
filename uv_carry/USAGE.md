@@ -53,5 +53,5 @@ UV Carry does not search for free UV space or move neighboring UVs. If the desti
 - relax/unwrap/local deformation;
 - procedural bake conversion;
 - unsupported or ambiguous material mapping;
-- normal maps, in tangent or object space: UV Carry Pro carries them. A normal map in the Images list refuses the carry; leave it out there to carry the other images;
-- carrying a texture into another material's images, or combining materials: UV Carry Pro does it.
+- normal maps, in tangent or object space: a normal map in the Images list refuses the carry; leave it out there to carry the other images;
+- carrying a texture into another material's images, or combining materials.
