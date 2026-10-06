@@ -6,7 +6,7 @@ Taps read only the island's own texels: the source is first grown by EXTEND ring
 texels, so a tap just outside the island reads a value made of island texels, never an unrelated
 atlas texel (source-safe filtering). A sample whose taps all miss the grown source takes the
 nearest island texel. The margin is grown from the written island texels. Whatever the write mask
-covers is overwritten, including texels used by other UVs (D1). Nothing wraps around the tile.
+covers is overwritten, including texels used by other UVs. Nothing wraps around the tile.
 """
 
 from dataclasses import dataclass

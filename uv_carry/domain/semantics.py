@@ -143,7 +143,7 @@ def classify(facts):
         return Entry(facts.key, UNKNOWN, "unaffected", "; ".join(facts.unmapped) or "not mapped by the edited UV map",
                      **common)
     if facts.source == "TILED":
-        return Entry(facts.key, semantic or UNKNOWN, "blocked", "a UDIM image; UDIM is outside the MVP", **common)
+        return Entry(facts.key, semantic or UNKNOWN, "blocked", "a UDIM image; UV Carry does not carry UDIM tiles", **common)
     if facts.source not in CARRIED_SOURCES:
         return Entry(facts.key, semantic or UNKNOWN, "blocked",
                      f"a {facts.source.lower()} image; only still images are carried", **common)

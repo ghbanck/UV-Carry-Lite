@@ -191,7 +191,7 @@ def register():
     bpy.types.Scene.uv_carry_margin = bpy.props.IntProperty(
         name="Margin (px)", default=2, min=0, max=16,
         description="Texels added around the islands from their own edge texels. A carry writes them over other UVs "
-                    "too (D1); Ctrl+Enter with no move fills only texels no UV uses")
+                    "too; Ctrl+Enter with no move fills only texels no UV uses")
     for cls in CLASSES:
         bpy.utils.register_class(cls)
     bpy.types.Scene.uv_carry_images = bpy.props.CollectionProperty(type=UVCARRY_ImageChoice)

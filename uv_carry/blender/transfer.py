@@ -423,7 +423,7 @@ def summary(report):
     if report["margin_texels"]:
         msg += f", margin {report['margin_texels']}"
     if report["d1_texels"]:
-        msg += f"; {report['d1_texels']} texels of other UVs overwritten (D1)"
+        msg += f"; {report['d1_texels']} texels of other UVs overwritten"
     if report.get("snapped_px"):
         msg += f"; island snapped {report['snapped_px']:.2f} px to whole texels"
     return msg

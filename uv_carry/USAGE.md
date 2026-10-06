@@ -4,15 +4,16 @@ UV Carry Lite runs this workflow in Blender 5.1, from the UV editor.
 
 ## Workflow
 
-1. Turn UV Carry on: the UV Carry button in the UV editor's header, or N > UV Carry > On.
-2. Select one or more complete UV islands: L over each, or A for all.
-3. Review the images the carry will write in the Images list of the UV Carry panel (N > UV Carry): every image the islands' materials reach, what UV Carry makes of it and whether it is carried, with a checkbox to leave an image out or include an optional one. Each island carries the images of its own materials.
-4. Start moving, rotating or scaling the islands.
-5. Perform one or more supported transforms. Intermediate transforms change UVs only.
-6. Press `Ctrl+Enter` after the final transform is complete.
-7. UV Carry validates the final context and plans one transfer per island from the original session position directly to the final position.
-8. The tool applies the coordinated in-memory result. Images change in memory only, as texture painting changes them; Ctrl+Z undoes the carry.
-9. To keep the images on disk, use Save Carried Images in the UV Carry panel. It reports each image's save apart from the carry.
+1. In the 3D View, select the mesh and press Tab for Edit Mode: the UV editor shows its UVs. Pick the texture in the UV editor's image menu to see it under them.
+2. Turn UV Carry on: the UV Carry button in the UV editor's header, or N > UV Carry > On.
+3. Select one or more complete UV islands: L over each, or A for all.
+4. Review the images the carry will write in the Images list of the UV Carry panel (N > UV Carry): every image the islands' materials reach, what UV Carry makes of it and whether it is carried, with a checkbox to leave an image out or include an optional one. Each island carries the images of its own materials.
+5. Start moving, rotating or scaling the islands.
+6. Perform one or more supported transforms. Intermediate transforms change UVs only.
+7. Press `Ctrl+Enter` after the final transform is complete.
+8. UV Carry checks the islands and carries each one's texels from where it started to where it ended, in every image of the set.
+9. Images change in memory, as texture painting changes them; Ctrl+Z undoes the carry.
+10. To keep the images on disk, use Save Carried Images in the UV Carry panel. It reports each image's save apart from the carry.
 
 ## Several islands
 
@@ -38,20 +39,18 @@ The UV Carry panel lists the images carries changed that are unsaved, with Save 
 
 A save that fails names the image and the reason. The file on disk stays as it was and the image stays listed. Undo does not change files already saved: after Ctrl+Z, save again to bring the file in line with memory.
 
-## D1
+## Islands that land on other UVs
 
-UV Carry does not search for free UV space or move neighboring UVs. If the destination texture region is already used by another UV, the written pixels may affect that other surface. This is accepted MVP behavior and should be visible to the user. A padding without a move never writes a texel another UV uses.
+UV Carry does not look for free UV space or move other UVs. If an island lands where another UV already uses the texture, the carried texels are written there, and the message says how many texels of other UVs were overwritten. A padding without a move never writes a texel another UV uses.
 
-## Unsupported MVP cases
+## Not supported
 
-- UV Sync Selection enabled (the session does not open);
-- partial island selection;
-- UDIM / outside-tile operation;
-- reflection / mirrored transform;
-- singular or numerically unstable transform;
-- explicit shear tool;
-- relax/unwrap/local deformation;
-- procedural bake conversion;
-- unsupported or ambiguous material mapping;
-- normal maps, in tangent or object space: a normal map in the Images list refuses the carry; leave it out there to carry the other images;
+- UV Sync Selection on: turn it off, or no session opens;
+- part of an island selected;
+- UDIM tiles, and islands outside the 0 to 1 tile;
+- mirrored islands, and transforms that collapse an island;
+- shear, relax, unwrap and other deformations of an island;
+- procedural textures: bake them to images first;
+- material setups UV Carry does not read: the message names the material and the input.
+- normal maps, in tangent or object space: leave a normal map out in the Images list to carry the other images;
 - carrying a texture into another material's images, or combining materials.

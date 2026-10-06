@@ -101,11 +101,11 @@ def summarize(reports, plan):
         if r["margin_texels"]:
             msg += f", margin {r['margin_texels']}"
         if r["d1_texels"]:
-            msg += f"; {r['d1_texels']} texels of other UVs overwritten (D1)"
+            msg += f"; {r['d1_texels']} texels of other UVs overwritten"
     else:
         parts = []
         for r in reports:
-            d1 = f", {r['d1_texels']} over other UVs (D1)" if r["d1_texels"] else ""
+            d1 = f", {r['d1_texels']} over other UVs" if r["d1_texels"] else ""
             parts.append(f"{r['image']} ({r['interior_texels']} texels {HOW[r['method']]}{d1})")
         what = f"{len(plan.islands)} islands" if several else "the island"
         msg = f"Carried {what} into {len(reports)} images: " + ", ".join(parts)

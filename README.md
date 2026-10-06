@@ -4,71 +4,57 @@
 
 **Move UVs. Carry Textures.**
 
-A free Blender 5.1 add-on: move, rotate or scale complete UV islands with Blender's own G, R and S, press `Ctrl+Enter`, and the texture under them follows them, in every image of their materials.
+A free Blender 5.1 add-on: move, rotate or scale UV islands with Blender's own G, R and S, press `Ctrl+Enter`, and the texture follows them.
 
 <p align="center">
-  <img src="assets/demo/uv-carry-demo.png" alt="UV Carry tool mode in Blender 5.1: the UV island of Suzanne's eye is moved with G, Ctrl+Enter carries its texels, and the eye on the model looks as it did before" width="100%">
+  <img src="assets/demo/uv-carry-demo.png" alt="UV Carry Lite demo" width="100%">
   <br>
-  <a href="https://github.com/user-attachments/assets/ccae296d-47ee-481e-8287-83b9d082a059"><b>▶ Watch the demo</b></a> (12 seconds, full resolution, with sound)
+  <a href="https://github.com/user-attachments/assets/ccae296d-47ee-481e-8287-83b9d082a059"><b>▶ Watch the demo</b></a> (12 seconds, with sound)
 </p>
 
-<sub>The author's screen recording in Blender 5.1.1: G moves the island of Suzanne's eye, Ctrl+Enter carries its texels, and Object Mode shows the eye as it was.</sub>
+<p align="center">
+  <a href="LICENSE"><img alt="License: GPL-3.0-or-later" src="https://img.shields.io/badge/license-GPL--3.0--or--later-2ea44f"></a>
+  <img alt="Platform: Blender add-on" src="https://img.shields.io/badge/platform-Blender%20add--on-0078d4">
+  <img alt="Blender version: 5.1" src="https://img.shields.io/badge/blender-5.1-e87d0d">
+  <a href="https://github.com/ghbanck/UV-Carry-Lite/releases/latest"><img alt="Release" src="https://img.shields.io/github/v/release/ghbanck/UV-Carry-Lite?label=release&color=d29922"></a>
+</p>
 
-- **Move, rotate or scale.** G, R and S stay as they are. Press `Ctrl+Enter` when the islands are where you want them, and their texels follow, in every image of their materials: colour, packed channels, alpha.
-- **Several islands at once**, each under its own move; `Ctrl+Enter` with no move pads the selected islands instead, filling only texels no UV uses.
-- **Undo and save.** `Ctrl+Z` restores texels and UVs together, and Save Carried Images writes the changed images, after a backup of each file.
-- **Nothing silent.** Mirrored, collapsing and off-tile islands, and material setups UV Carry Lite does not carry, are refused before anything is written, with a message that says why.
+- **Your tools stay yours.** G, R and S are Blender's. Nothing is written while you move; the texture work happens once, at `Ctrl+Enter`.
+- **Every image of the material**: colour, packed channels and alpha follow the islands.
+- **Several islands at once**, each under its own move. `Ctrl+Enter` with no move pads the selected islands instead.
+- **Undo and save.** `Ctrl+Z` restores the texels and the UVs together; Save Carried Images writes the changed images, after a backup of each file.
+- **Nothing silent.** What cannot be carried is refused before anything is written, with a message that says why.
 
-## Download and install
+## Install
 
-UV Carry Lite needs Blender 5.1.
-
-1. Download `uv_carry-<version>.zip` from the [Releases](https://github.com/ghbanck/UV-Carry-Lite/releases).
-2. In Blender, open Edit > Preferences > Get Extensions, open the menu at the top right, choose Install from Disk and pick the zip. Dropping the zip on Blender's window does the same.
-3. UV Carry appears in the UV editor's header.
-
-The zip holds the add-on, a short README and the usage guide.
+1. Download `uv_carry_lite-<version>.zip` from [Releases](https://github.com/ghbanck/UV-Carry-Lite/releases/latest).
+2. In Blender 5.1, open Edit > Preferences > Get Extensions, open the menu at the top right, choose Install from Disk and pick the zip.
 
 ## Quick start
 
-1. In the UV editor, press **UV Carry** in the header (or N > UV Carry > On).
-2. Select complete UV islands (L over each, or A for all).
-3. Move, rotate or scale them with G, R and S.
-4. Press `Ctrl+Enter` over the UV editor: the texture follows the islands.
-5. Save Carried Images, in the UV Carry panel, writes the changed images to disk.
+1. In the 3D View, select the mesh and press Tab for Edit Mode: the UV editor shows its UVs.
+2. In the UV editor, press **UV Carry** in the header, or N > UV Carry > On.
+3. Select complete UV islands: L over each, or A for all.
+4. Move, rotate or scale them with G, R and S.
+5. Press `Ctrl+Enter` over the UV editor: the texture follows the islands.
+6. Save Carried Images, in the UV Carry panel, writes the changed images to disk.
 
-## What UV Carry Lite does not do
-
-- **Normal maps.** UV Carry, the paid edition, carries them. While a normal map is in the Images list of the UV Carry panel, UV Carry Lite refuses to carry; leave it out there to carry the other images, and the normal map stays as it was.
-- **Other materials' images.** Each island carries the images of its own materials. Carrying islands into another material's images, which merges several materials into one atlas, is UV Carry's.
-- **Pack Islands.** UV Carry carries the texture of islands packed with UV > Pack Islands.
-- **UDIM tiles, mirrored islands and parts of islands** are refused.
+The full guide is [uv_carry/USAGE.md](uv_carry/USAGE.md).
 
 ## How it works
 
-UV Carry writes no pixel while the islands move. It remembers where they started, lets Blender move them as it always does, and does the texture work once, at `Ctrl+Enter`.
+![How a carry works](assets/how/how-it-works.svg)
 
-![How a carry works: the island's texels are frozen at its origin; at its final place every covered texel centre is mapped back and read from the four nearest frozen texels](assets/how/how-it-works.svg)
+UV Carry remembers where the islands started, lets Blender move them as it always does, and at `Ctrl+Enter` carries each island's texels from where it started to where it ended. A move by whole texels is copied bit for bit; rotations and scales are resampled from the island's own texels only, so nothing bleeds in from a neighbour.
 
-1. **Corners, read as arrays.** Every face corner of the mesh joins a vertex, with its position x, y, z in 3D, to a UV, u, v in the image tile [0, 1]. UV Carry reads the corners' UVs, their vertices, the UV selection and the face materials as whole arrays.
-2. **Islands and their origin.** Two faces belong to one island when they share an edge with the same UVs at both ends. A move of complete islands opens a session. The islands' UVs before the move are its origin, and the texels under each island are copied ("frozen") from the images its own materials use. If the mesh or the images change, the session ends and the islands go back.
-3. **One map per island.** At `Ctrl+Enter`, each island's map from its origin UVs to its final UVs is fitted to its corners by least squares: `[u', v'] = A [u, v] + t`, with `A` a 2 x 2 matrix. A move alone by whole texels is copied bit for bit; rotations and scales are resampled. A mirror (`det A < 0`), a collapse or an island whose shape changed is refused before any write.
-4. **From UVs to texels.** An image of W x H texels covers the tile, and texel (i, j) has its centre at ((i + 0.5)/W, (j + 0.5)/H). A texel belongs to an island when its centre lies inside one of the island's UV triangles; an island thinner than a texel takes the texel under its centroid. Every image keeps its own resolution.
-5. **Backwards, never forwards.** Every texel the island covers at its final place is mapped back by the inverse map into the frozen source and read bilinearly from the island's own texels only, so nothing bleeds in from a neighbouring island. Margin (px) rings are then grown around the written texels from their own edge values: no gap, no seam.
-6. **One transaction.** Every image's result is computed before the first write. Images are then written one by one, each checked again just before its write; a failure restores what was written and puts the islands back. `Ctrl+Z` restores the texels with the UVs.
+## UV Carry Lite and UV Carry
 
-## UV Carry
+UV Carry Lite carries the images of each island's own materials, without normal maps. **UV Carry**, the paid edition, adds tangent-space normal maps, Pack Islands, and Carry Into, which merges the islands of many materials into one atlas.
 
-UV Carry, the paid edition, adds normal maps, which keep their relief when an island turns; Carry Into, which carries islands into another material's images and merges the islands of several materials into one atlas; and Pack Islands, whose packed islands carry their texture. Installing it replaces UV Carry Lite.
+## Requirements
 
-## State
-
-0.4.1, run with Blender 5.1.1 on Windows 11. Other Blender versions and operating systems are not verified.
+Blender 5.1. Tested with Blender 5.1.1 on Windows 11.
 
 ## License
 
-Copyright (C) 2026 Gustavo Banck.
-
-UV Carry Lite is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version. It is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See [LICENSE](LICENSE).
-
-`uv_carry/` is the add-on, file for file as the release zip holds it.
+Copyright (C) 2026 Gustavo Banck. UV Carry Lite is free, licensed under the GNU General Public License, version 3 or any later version: see [LICENSE](LICENSE).

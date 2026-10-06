@@ -1,6 +1,6 @@
 """One affine map from an island's origin UVs to its final UVs.
 
-The MVP carries a composition of moves, rotations and positive scales: one affine map, fitted to
+UV Carry carries a composition of moves, rotations and positive scales: one affine map, fitted to
 every corner of the island. Before any write it is refused when it does not reproduce the corners
 within FIT_RESIDUAL_MAX, mirrors the island, or is near singular or badly conditioned.
 The thresholds are provisional.
@@ -18,7 +18,7 @@ FIT_MAX_CONDITION = 1e4     # largest ratio between the singular values
 REFUSALS = {
     "degenerate_source": "Island has no area at its origin",
     "residual": "Island was reshaped, not only moved, rotated or scaled",
-    "reflection": "Island was mirrored; mirroring is outside the MVP",
+    "reflection": "Island was mirrored; UV Carry does not carry mirrored islands",
     "near_singular": "Island was scaled almost to nothing",
     "condition": "Island was stretched too far in one direction",
 }
