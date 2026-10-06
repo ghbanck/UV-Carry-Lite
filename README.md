@@ -49,7 +49,7 @@ UV Carry remembers where the islands started, lets Blender move them as it alway
 
 ## UV Carry Lite and UV Carry
 
-UV Carry Lite carries the images of each island's own materials, without normal maps. **UV Carry**, the paid edition, adds tangent-space normal maps, Pack Islands, and Carry Into, which merges the islands of many materials into one atlas.
+UV Carry Lite carries the images of each island's own materials, without normal maps. **[UV Carry](https://github.com/ghbanck/UV-Carry)**, the paid edition, adds tangent-space normal maps, Pack Islands, and Carry Into, which merges the islands of many materials into one atlas.
 
 ## Requirements
 
