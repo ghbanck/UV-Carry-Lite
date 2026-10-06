@@ -46,6 +46,7 @@ UV Carry does not look for free UV space or move other UVs. If an island lands w
 ## Not supported
 
 - UV Sync Selection on: turn it off, or no session opens;
+- more than one object in Edit Mode: UV Carry carries one object at a time; select only the object to carry before pressing Tab;
 - part of an island selected;
 - UDIM tiles, and islands outside the 0 to 1 tile;
 - mirrored islands, and transforms that collapse an island;

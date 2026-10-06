@@ -46,6 +46,16 @@ NAVIGATION = {"MIDDLEMOUSE", "WHEELUPMOUSE", "WHEELDOWNMOUSE", "WHEELINMOUSE", "
 # Operators that may run between the read before a move and the move itself without changing UVs.
 QUIET_OPS = ("_OT_select", "_OT_view", "WM_OT_tool_set", "UV_CARRY_OT_image_choice")
 
+MULTI_OBJECT = ("{n} objects are in Edit Mode: UV Carry carries one object at a time, and a move now would move the "
+                "UVs of all {n} without their texture. Leave Edit Mode (Tab), select only {name}, and press Tab again")
+
+
+def editing_meshes(win):
+    """The mesh objects in edit mode in the window's view layer. Blender's own G, R, S and Pack Islands move
+    the UVs of all of them; UV Carry follows one."""
+    return [o for o in win.view_layer.objects if o.type == "MESH" and o.mode == "EDIT"]
+
+
 CHANGE_LABELS = {"active_object": "active object", "uv_map_active": "active UV map", "geometry": "vertex positions",
                  "selection": "UV selection", "uvs_outside_island": "UVs outside the islands", "images": "image targets",
                  "materials": "materials"}
@@ -670,6 +680,15 @@ class Tool:
 
     def settle_ready(self, win, refresh):
         snap = self.snapshot
+        if snap is None and self.status[0] == "multi_object":
+            ops = ctx.registered_since(self.read_tail) or []
+            moved = [op.bl_idname for op in ops if op.bl_idname.startswith("TRANSFORM_OT_")]
+            if moved:
+                n = self.status[1]["objects"]
+                self.note("multi_object_move", f"Not carried: the UVs of {n} objects in Edit Mode moved without their "
+                          "texture. Ctrl+Z puts them back; then leave Edit Mode, select only one object and press Tab "
+                          "again", severity="WARNING", ops=moved, objects=n)
+                refresh = True
         if snap is not None:
             ops = ctx.registered_since(snap.tail)
             if ops and any(op.bl_idname.startswith("TRANSFORM_OT_") for op in ops):
@@ -685,8 +704,11 @@ class Tool:
         self.read_tail, self.input_seen, self.snapshot = ctx.registered_tail(), False, None
         before = self.status
         obj = win.view_layer.objects.active
+        editing = editing_meshes(win)
         if obj is None or obj.type != "MESH" or obj.mode != "EDIT":
             self.status = ("no_edit_mesh", None)
+        elif len(editing) > 1:      # Blender would move every object's UVs; UV Carry would follow only obj's
+            self.status = ("multi_object", {"objects": len(editing), "active": obj.name})
         elif win.scene.tool_settings.use_uv_select_sync:
             self.status = ("uv_sync", None)
         else:
@@ -776,6 +798,10 @@ class Tool:
         obj = win.view_layer.objects.active
         if obj is None or obj.type != "MESH" or obj.mode != "EDIT":
             return self.note("pad_no_edit_mesh", "Nothing to carry or pad: UV Carry needs a mesh in edit mode")
+        editing = editing_meshes(win)
+        if len(editing) > 1:
+            return self.note("pad_multi_object", "Not padded: " + MULTI_OBJECT.format(n=len(editing), name=obj.name),
+                             severity="WARNING", objects=len(editing))
         if scene.tool_settings.use_uv_select_sync:
             return self.note("pad_uv_sync", "Not padded: UV Sync Selection is on; turn it off to use UV Carry")
         try:
