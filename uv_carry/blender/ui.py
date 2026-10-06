@@ -70,7 +70,10 @@ def status_lines(t, img):
         kind, detail = t.status
         text = f"ready: {selected_text(detail)}" if kind == "ok" else READY_TEXT.get(kind, READY_TEXT["unknown"])
         shown = image_text(t.ready_set) if kind == "ok" else ""
-        lines = [(f"UV Carry  ·  {text}{shown}", CYAN if kind == "ok" else LIGHT)]
+        if kind == "multi_object":
+            lines = [(f"UV Carry  ·  {controller.MULTI_OBJECT.format(n=detail['objects'], name=detail['active'])}", RED)]
+        else:
+            lines = [(f"UV Carry  ·  {text}{shown}", CYAN if kind == "ok" else LIGHT)]
     last = t.last
     if last and last.get("state") != "OPEN":
         color = {"INFO": GREEN if last["state"] == "COMMITTED" else LIGHT, "WARNING": RED, "ERROR": RED}
