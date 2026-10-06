@@ -16,7 +16,7 @@ A free Blender 5.1 add-on: move, rotate or scale UV islands with Blender's own G
   <a href="LICENSE"><img alt="License: GPL-3.0-or-later" src="https://img.shields.io/badge/license-GPL--3.0--or--later-2ea44f"></a>
   <img alt="Platform: Blender add-on" src="https://img.shields.io/badge/platform-Blender%20add--on-0078d4">
   <img alt="Blender version: 5.1" src="https://img.shields.io/badge/blender-5.1-e87d0d">
-  <a href="https://github.com/ghbanck/UV-Carry-Lite/releases/latest"><img alt="Release" src="https://img.shields.io/github/v/release/ghbanck/UV-Carry-Lite?label=release&color=d29922"></a>
+  <a href="https://github.com/ghbanck/UV-Carry-Lite/releases"><img alt="Release" src="https://img.shields.io/github/v/release/ghbanck/UV-Carry-Lite?include_prereleases&sort=semver&label=release&color=d29922"></a>
 </p>
 
 - **Your tools stay yours.** G, R and S are Blender's. Nothing is written while you move; the texture work happens once, at `Ctrl+Enter`.
@@ -27,7 +27,7 @@ A free Blender 5.1 add-on: move, rotate or scale UV islands with Blender's own G
 
 ## Install
 
-1. Download `uv_carry_lite-<version>.zip` from [Releases](https://github.com/ghbanck/UV-Carry-Lite/releases/latest).
+1. Download `uv_carry_lite-<version>.zip` from [Releases](https://github.com/ghbanck/UV-Carry-Lite/releases).
 2. In Blender 5.1, open Edit > Preferences > Get Extensions, open the menu at the top right, choose Install from Disk and pick the zip.
 
 ## Quick start
