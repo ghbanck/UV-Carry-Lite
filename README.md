@@ -58,3 +58,5 @@ Blender 5.1. Tested with Blender 5.1.1 on Windows 11.
 ## License
 
 Copyright (C) 2026 Gustavo Banck. UV Carry Lite is free, licensed under the GNU General Public License, version 3 or any later version: see [LICENSE](LICENSE).
+
+The GPL covers the code, not the names: "UV Carry", "UV Carry Lite" and the UV Carry logo are the author's. A modified or redistributed copy keeps every right the GPL gives, but must not be called by these names or carry the logo.
