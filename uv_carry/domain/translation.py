@@ -4,7 +4,7 @@ The source is read from a frozen copy of the island's own region, taken before a
 destination that overlaps the source still reads original texels. Texels are written only inside
 the write mask: the island shifted by the translation, plus an optional margin generated from
 the island's own texels. Whatever the write mask covers is overwritten, including texels used by
-other UVs (D1). Nothing wraps around the image tile, and no full-image copy is required.
+other UVs. Nothing wraps around the image tile, and no full-image copy is required.
 """
 
 from dataclasses import dataclass
